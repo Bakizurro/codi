@@ -1,0 +1,223 @@
+# Unidad Organizativa: "Groups"
+dn: ou=Groups,dc=curso,dc=ies
+objectClass: organizationalUnit
+ou: Groups
+
+# Grupos: auriga, cisne, orion, aguila, planetas, cometas
+dn: cn=auriga,ou=Groups,dc=curso,dc=ies
+objectClass: posixGroup
+cn: auriga
+gidNumber: 5012
+
+dn: cn=cisne,ou=Groups,dc=curso,dc=ies
+objectClass: posixGroup
+cn: cisne
+gidNumber: 5013
+
+dn: cn=orion,ou=Groups,dc=curso,dc=ies
+objectClass: posixGroup
+cn: orion
+gidNumber: 5014
+
+dn: cn=aguila,ou=Groups,dc=curso,dc=ies
+objectClass: posixGroup
+cn: aguila
+gidNumber: 5015
+
+dn: cn=planetas,ou=Groups,dc=curso,dc=ies
+objectClass: posixGroup
+cn: planetas
+gidNumber: 5016
+
+dn: cn=cometas,ou=Groups,dc=curso,dc=ies
+objectClass: posixGroup
+cn: cometas
+gidNumber: 5017
+
+# Unidad Organizativa: "People"
+dn: ou=People,dc=curso,dc=ies
+objectClass: organizationalUnit
+ou: People
+
+# Usuarios: capella, haldus, deneb, albireo, rigel, betelgeuse,
+# altair, tarazed, venus, marte, halley, hallebopp
+
+dn: uid=capella,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: capella
+sn: de Auriga
+givenName: Capella
+cn: Capella de Auriga
+displayName: Capella
+uidNumber: 10000
+gidNumber: 5012
+userPassword: capella
+loginShell: /bin/bash
+homeDirectory: /home/capella
+
+dn: uid=haldus,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: haldus
+sn: de Auriga
+givenName: Haldus
+cn: Haldus de Auriga
+displayName: Haldus
+uidNumber: 10001
+gidNumber: 5012
+userPassword: haldus
+loginShell: /bin/bash
+homeDirectory: /home/haldus
+
+dn: uid=deneb,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: deneb
+sn: de Cisne
+givenName: Deneb
+cn: Deneb de Cisne
+displayName: Deneb
+uidNumber: 10002
+gidNumber: 5013
+userPassword: deneb
+loginShell: /bin/bash
+homeDirectory: /home/deneb
+
+dn: uid=albireo,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: albireo
+sn: de Cisne
+givenName: Albireo
+cn: Albireo de Cisne
+displayName: Albireo
+uidNumber: 10003
+gidNumber: 5013
+userPassword: albireo
+loginShell: /bin/bash
+homeDirectory: /home/albireo
+
+dn: uid=rigel,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: rigel
+sn: de Orion
+givenName: Rigel
+cn: Rigel de Orion
+displayName: Rigel
+uidNumber: 10004
+gidNumber: 5014
+userPassword: rigel
+loginShell: /bin/bash
+homeDirectory: /home/rigel
+
+dn: uid=betelgeuse,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: betelgeuse
+sn: de Orion
+givenName: Betelgeuse
+cn: Betelgeuse de Orion
+displayName: Betelgeuse
+uidNumber: 10005
+gidNumber: 5014
+userPassword: betelgeuse
+loginShell: /bin/bash
+homeDirectory: /home/betelgeuse
+
+dn: uid=altair,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: altair
+sn: de Aguila
+givenName: Altair
+cn: Altair de Aguila
+displayName: Altair
+uidNumber: 10006
+gidNumber: 5015
+userPassword: altair
+loginShell: /bin/bash
+homeDirectory: /home/altair
+
+dn: uid=tarazed,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: tarazed
+sn: de Aguila
+givenName: Tarazed
+cn: Tarazed de Aguila
+displayName: Tarazed
+uidNumber: 10007
+gidNumber: 5015
+userPassword: tarazed
+loginShell: /bin/bash
+homeDirectory: /home/tarazed
+
+dn: uid=marte,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: marte
+sn: de Planetas
+givenName: Marte
+cn: Marte de Planetas
+displayName: Marte
+uidNumber: 10008
+gidNumber: 5016
+userPassword: marte
+loginShell: /bin/bash
+homeDirectory: /home/marte
+
+dn: uid=venus,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: venus
+sn: de Planetas
+givenName: Venus
+cn: Venus de Planetas
+displayName: Venus
+uidNumber: 10009
+gidNumber: 5016
+userPassword: venus
+loginShell: /bin/bash
+homeDirectory: /home/venus
+
+dn: uid=halley,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: halley
+sn: de Cometas
+givenName: Halley
+cn: Halley de Cometas
+displayName: Halley
+uidNumber: 10010
+gidNumber: 5017
+userPassword: halley
+loginShell: /bin/bash
+homeDirectory: /home/halley
+
+dn: uid=hallebopp,ou=People,dc=curso,dc=ies
+objectClass: inetOrgPerson
+objectClass: posixAccount
+objectClass: shadowAccount
+uid: hallebopp
+sn: de Cometas
+givenName: Halle-Bopp
+cn: Halle-Bopp de Cometas
+displayName: Halle-Bopp
+uidNumber: 10011
+gidNumber: 5017
+userPassword: hallebopp
+loginShell: /bin/bash
+homeDirectory: /home/hallebopp
